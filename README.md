@@ -69,5 +69,5 @@ Example plots are automatically generated at the end of training.
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/breast-cancer-classifier.git
+git clone https://github.com/bastienrousseau/breast-cancer-classifier.git
 cd breast-cancer-classifier
