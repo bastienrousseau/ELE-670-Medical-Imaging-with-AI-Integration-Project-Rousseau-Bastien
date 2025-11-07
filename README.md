@@ -8,27 +8,24 @@
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 This project focuses on the **automatic classification of breast tumors** from mammography images into three categories:
 - **Benign**
 - **Malignant**
 - **Benign without callback** (clearly benign lesions that do not require further examination)
 
-The goal is to compare several **deep learning architectures** – from classical CNNs to modern Vision Transformers (ViT) – and evaluate their ability to distinguish between lesion types despite the small dataset size.
+The goal is to compare several **deep learning architectures** – from classical CNNs to modern Vision Transformers (ViT).
 
 ---
 
-## 🧠 Methods
+## Methods
 
-### 1. **Data**
-The dataset used is the **CBIS-DDSM (Curated Breast Imaging Subset of DDSM)** [Lee et al., 2017], derived from the historical DDSM collection.  
-To make the images directly exploitable with deep learning frameworks, DICOM files were converted into **8-bit JPEGs**, with intensity normalization and metadata extraction.
-
-### 2. **Preprocessing**
+### 1. **Preprocessing**
 - Contrast and brightness normalization  
 - Resizing (512×512 → 224×224 / 384×384 for ViT)  
 - Augmentation: rotations, flips, Gaussian blur, sharpness, and noise  
 - Dataset split: **80% training (with validation), 20% testing**
+- Merging of class 
 
 ### 3. **Models**
 | Model | Description | Key Notes |
