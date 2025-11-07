@@ -14,7 +14,7 @@ This project focuses on the **automatic classification of breast tumors** from m
 - **Malignant**
 - **Benign without callback** (clearly benign lesions that do not require further examination)
 
-The goal is to compare several **deep learning architectures** – from classical CNNs to modern Vision Transformers (ViT).
+The goal is to compare several **deep learning architectures** – from ResNet model to modern Vision Transformers (ViT).
 
 ---
 
@@ -30,8 +30,7 @@ The goal is to compare several **deep learning architectures** – from classica
 ### 3. **Models**
 | Model | Description | Key Notes |
 |:------|:-------------|:-----------|
-| **CNN (baseline)** | Small custom convolutional network | Overfitted due to small dataset |
-| **ResNet-B0** | Transfer learning from ImageNet | Best accuracy (74% validation) |
+| **ResNet-B1** | Transfer learning from ImageNet | Best accuracy (74% validation) |
 | **Vision Transformer (ViT-B/16)** | Fine-tuned transformer with self-attention | Better AUC but sensitive to ImageNet bias |
 
 ### 4. **Loss & Training**
@@ -42,29 +41,30 @@ The goal is to compare several **deep learning architectures** – from classica
 
 ---
 
-## 📊 Results Summary
+##  Results Summary
 
 | Model | Val. Accuracy | Test Accuracy | AUC (macro) |
 |:------|:--------------|:---------------|:-------------|
-| CNN | ~55% | ~50% | 0.72 |
 | ResNet-B0 | **74%** | 57% | 0.79 |
-| ViT-B/16 | 58% | 54%| **0.86 (best class)** |
+| ViT-B/16 | 58% | 54%| **0.86 (for the best class)** |
 
-- The **ResNet** outperformed the CNN baseline thanks to transfer learning.  
-- The **ViT** captured global context but required more data and domain adaptation.  
-- Overfitting remains the main limitation due to dataset size.
+- The **ResNet** outperformed the firstly CNN baseline (which is not included in the code anymore) thanks to transfer learning.  
+- The **ViT** captured global context but required more data and domain adaptation but showed good result about malignant class.  
+- Overfitting remains the main limitation due to small dataset and the strong pre-training for the ViT.
 
 ---
 
-## 📈 Visualization
+##  Visualization
 Training and validation losses and accuracies are displayed per epoch using `matplotlib`.  
-Example plots are automatically generated at the end of training.
+Plots are automatically generated at the end of training.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/bastienrousseau/breast-cancer-classifier.git
 cd breast-cancer-classifier
+
+You can then execute cells **in the order of the notebook**
