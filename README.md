@@ -64,7 +64,7 @@ Plots are automatically generated at the end of training.
 
 ### Download the notebook
 
-Dowload the notebook file : project-ele670-breast-cancer-detection-Rousseau-Bastien.ipynb
+Dowload the notebook file : project-ele670-breast-cancer-detection-Rousseau-Bastien.ipynb \n
 You can then go to the folder where you downloaded the project and import it on the website kaggle after creating your account: https://www.kaggle.com/
 Once done, import the notebook and add to the input section the dataset CBIS-DDSM : https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset
 Then you can execute cells **in the order of the notebook**
