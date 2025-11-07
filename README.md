@@ -66,4 +66,6 @@ Plots are automatically generated at the end of training.
 ```bash
 git clone https://github.com/bastienrousseau/breast-cancer-classifier.git
 ````
-You can then go to the folder where you downloaded the project and execute cells **in the order of the notebook**
+You can then go to the folder where you downloaded the project and import it on the website kaggle: https://www.kaggle.com/
+Once done, import the notebook and add to the input the dataset CBIS-DDSM : https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset
+Then you can execute cells **in the order of the notebook**
