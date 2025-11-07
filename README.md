@@ -1,10 +1,10 @@
 # ELE-670-Medical-Imaging-with-AI-Integration-Project-Rousseau-Bastien
 
-# 🩺 Breast Cancer Classification using Deep Learning  
+# Breast Cancer Classification 
 **Author:** Bastien Rousseau  
 **Email:** barou1817@uis.no  
 **Course:** ELE670 – Medical Imaging and AI Integration  
-**Institution:** University of Stavanger / Grenoble INP – Phelma  
+**Institution:** University of Stavanger 
 
 ---
 
