@@ -65,6 +65,5 @@ Plots are automatically generated at the end of training.
 ### 1️ Clone the repository
 ```bash
 git clone https://github.com/bastienrousseau/breast-cancer-classifier.git
-cd breast-cancer-classifier
 ````
-You can then execute cells **in the order of the notebook**
+You can then go to the folder where you downloaded the project and execute cells **in the order of the notebook**
