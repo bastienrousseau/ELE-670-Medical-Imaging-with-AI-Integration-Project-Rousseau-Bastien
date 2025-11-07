@@ -45,8 +45,8 @@ The goal is to compare several **deep learning architectures** – from ResNet m
 
 | Model | Val. Accuracy | Test Accuracy | AUC (macro) |
 |:------|:--------------|:---------------|:-------------|
-| ResNet-B0 | **74%** | 57% | 0.79 |
-| ViT-B/16 | 58% | 54%| **0.86 (for the best class)** |
+| ResNet-B0 | **73%** | 57% | 0.79 |
+| ViT-B/16 | 59% | 54%| **0.86 (for the best class)** |
 
 - The **ResNet** outperformed the firstly CNN baseline (which is not included in the code anymore) thanks to transfer learning.  
 - The **ViT** captured global context but required more data and domain adaptation but showed good result about malignant class.  
